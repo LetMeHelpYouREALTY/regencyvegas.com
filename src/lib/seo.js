@@ -135,8 +135,8 @@ export const PAGE_SEO = {
     path: "/location",
   },
   nearbyAmenities: {
-    title: "Shopping & Dining Near Regency at Summerlin",
-    description: `Discover shopping, dining, healthcare near ${COMMUNITY.name}. Downtown Summerlin, Red Rock Casino, medical facilities all minutes away. Call ${PHONE.marketing}.`,
+    title: "Nearby Amenities in Regency at Summerlin, Las Vegas",
+    description: `Interactive map and local guide to dining, golf, healthcare, grocery, and shopping near ${COMMUNITY.name} in Summerlin South. Verified destinations and drive times. Call ${PHONE.marketing}.`,
     path: "/nearby-amenities",
   },
   buyingGuide: {

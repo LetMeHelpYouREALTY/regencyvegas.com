@@ -1,4 +1,8 @@
 import { AGENT, BUSINESS, COMMUNITY, PHONE } from "./constants";
+import {
+  COMMUNITY_MAP_CENTER,
+  FEATURED_NEARBY_PLACES,
+} from "./nearbyAmenities";
 
 export const agentSchema = {
   "@context": "https://schema.org",
@@ -14,10 +18,21 @@ export const agentSchema = {
     addressRegion: BUSINESS.state,
     postalCode: BUSINESS.zipCode,
   },
-  areaServed: {
-    "@type": "Place",
-    name: "Summerlin, Las Vegas, Nevada",
-  },
+  areaServed: [
+    {
+      "@type": "Place",
+      name: COMMUNITY.name,
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: COMMUNITY_MAP_CENTER.lat,
+        longitude: COMMUNITY_MAP_CENTER.lng,
+      },
+    },
+    {
+      "@type": "Place",
+      name: "Summerlin, Las Vegas, Nevada",
+    },
+  ],
   priceRange: `$${(COMMUNITY.price.min / 1000).toFixed(0)}K - $${(
     COMMUNITY.price.max / 1000000
   ).toFixed(1)}M+`,
@@ -159,6 +174,51 @@ export function generateBreadcrumbSchema(items) {
       position: index + 1,
       name: item.name,
       item: `https://regencyvegas.com${item.path}`,
+    })),
+  };
+}
+
+export function generateCommunityPlaceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: COMMUNITY.name,
+    description: `Toll Brothers 55+ guard-gated community in The Cliffs village, ${COMMUNITY.city}, ${COMMUNITY.state}.`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: COMMUNITY.city,
+      addressRegion: COMMUNITY.state,
+      postalCode: COMMUNITY.zipCode,
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: COMMUNITY_MAP_CENTER.lat,
+      longitude: COMMUNITY_MAP_CENTER.lng,
+    },
+  };
+}
+
+export function generateNearbyPlacesItemListSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Featured places near ${COMMUNITY.name}`,
+    itemListElement: FEATURED_NEARBY_PLACES.map((place, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": place.schemaType,
+        name: place.name,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: place.streetAddress,
+          addressLocality: place.city,
+          addressRegion: place.state,
+          postalCode: place.postalCode,
+          addressCountry: "US",
+        },
+      },
     })),
   };
 }

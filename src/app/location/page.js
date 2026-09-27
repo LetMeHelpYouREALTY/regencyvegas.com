@@ -3,6 +3,7 @@ import { BUSINESS, COMMUNITY, PHONE } from "@/lib/constants";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 import GoogleMapEmbed from "@/components/ui/GoogleMapEmbed";
 import GoogleActionButtons from "@/components/ui/GoogleActionButtons";
+import NearbyAmenityMapSection from "@/components/sections/NearbyAmenityMapSection";
 
 export const metadata = generatePageMetadata(PAGE_SEO.location);
 
@@ -68,6 +69,13 @@ export default function LocationPage() {
         </p>
         <GoogleMapEmbed />
       </div>
+
+      <NearbyAmenityMapSection
+        className="bg-luxury-black"
+        compact
+        title={`What's Nearby ${COMMUNITY.name}`}
+        description={`See healthcare, grocery, golf, and dining around The Cliffs village — with an interactive map and directions to verified Summerlin destinations.`}
+      />
 
       {/* Contextual Links Section */}
       <section className="mt-12 p-6 bg-luxury-900 rounded-lg border border-stone-700">

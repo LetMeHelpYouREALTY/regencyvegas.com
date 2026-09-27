@@ -3,6 +3,7 @@ import Script from "next/script";
 import RealScoutListings from "@/components/widgets/RealScoutListings";
 import { COMMUNITY, PHONE } from "@/lib/constants";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
+import NearbyAmenityMapSection from "@/components/sections/NearbyAmenityMapSection";
 
 export const metadata = generatePageMetadata(PAGE_SEO.homesForSale);
 
@@ -74,6 +75,13 @@ export default function HomesForSalePage() {
         </h2>
         <RealScoutListings />
       </section>
+
+      <NearbyAmenityMapSection
+        className="bg-luxury-black"
+        compact
+        title="What's Near Your Next Home"
+        description={`Buyers often ask about grocery, healthcare, and entertainment near ${COMMUNITY.name}. Explore the interactive map and full amenities guide before you tour.`}
+      />
     </main>
   );
 }
