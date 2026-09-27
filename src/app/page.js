@@ -7,6 +7,7 @@ import TrackedPhoneLink from "@/components/ui/TrackedPhoneLink";
 import TrackedEmailLink from "@/components/ui/TrackedEmailLink";
 import { PHONE, COMMUNITY, COLLECTIONS, AGENT } from "@/lib/constants";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
+import NearbyAmenityMapSection from "@/components/sections/NearbyAmenityMapSection";
 
 export const metadata = generatePageMetadata(PAGE_SEO.home);
 
@@ -506,6 +507,8 @@ export default function HomePage() {
           <RealScoutListings />
         </div>
       </section>
+
+      <NearbyAmenityMapSection className="bg-navy-950 text-white" />
 
       {/* Amenities preview */}
       <section className="bg-navy-800 py-16 text-white md:py-20">
