@@ -12,7 +12,15 @@ export default function RealScoutListings({
   propertyTypes = ",SFR",
   className = "",
 }) {
-  const [status, setStatus] = useState("loading"); // loading | ready | error
+  const [status, setStatus] = useState(() => {
+    if (
+      typeof window !== "undefined" &&
+      window.customElements?.get("realscout-office-listings")
+    ) {
+      return "ready";
+    }
+    return "loading";
+  }); // loading | ready | error
 
   useEffect(() => {
     if (status !== "loading") return;
@@ -23,11 +31,6 @@ export default function RealScoutListings({
       }, 10000);
 
       return () => clearTimeout(fallbackTimeout);
-    }
-
-    if (window.customElements.get("realscout-office-listings")) {
-      setStatus("ready");
-      return;
     }
 
     const checkId = setInterval(() => {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import Script from "next/script";
 import RealScoutListings from "@/components/widgets/RealScoutListings";
 import { COMMUNITY, PHONE } from "@/lib/constants";
@@ -10,6 +11,7 @@ export const metadata = generatePageMetadata(PAGE_SEO.homesForSale);
 export default function HomesForSalePage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.homesForSale.breadcrumbs} />
       <Script
         src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
         type="module"

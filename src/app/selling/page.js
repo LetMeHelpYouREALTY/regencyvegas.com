@@ -1,4 +1,5 @@
 import { COMMUNITY, PHONE } from "@/lib/constants";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 
 export const metadata = generatePageMetadata(PAGE_SEO.selling);
@@ -6,6 +7,7 @@ export const metadata = generatePageMetadata(PAGE_SEO.selling);
 export default function SellingPage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.selling.breadcrumbs} />
       <h1 className="mb-4 font-playfair text-3xl text-white md:text-4xl">
         Sell Your Regency at Summerlin Home
       </h1>

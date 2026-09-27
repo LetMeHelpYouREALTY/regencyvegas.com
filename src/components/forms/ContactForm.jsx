@@ -73,6 +73,7 @@ export default function ContactForm() {
           phone: data.phone,
           interest: data.interest,
           message: data.message,
+          sourceUrl: typeof window !== 'undefined' ? window.location.href : '',
         }),
       });
 
@@ -90,7 +91,9 @@ export default function ContactForm() {
       console.error('Form submission error:', error);
       trackFormSubmit('contact', false);
       setSubmitStatus('error');
-      setSubmitMessage('Sorry, there was an error sending your message. Please try calling us directly or sending an email.');
+      setSubmitMessage(
+        `Sorry, something went wrong sending your message. Please call or text ${AGENT.name} at ${PHONE.marketing}.`
+      );
     } finally {
       setIsSubmitting(false);
     }

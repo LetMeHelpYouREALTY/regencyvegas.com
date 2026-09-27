@@ -1,3 +1,5 @@
+export const SITE_URL = "https://www.regencyvegas.com";
+
 export const PHONE = {
   marketing: "702-222-1964",
   professional: "702-500-1955",

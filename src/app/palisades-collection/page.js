@@ -1,4 +1,5 @@
 import { COLLECTIONS, COMMUNITY, PHONE } from "@/lib/constants";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 import { generateFloorPlanSchema } from "@/lib/schema";
 
@@ -12,6 +13,7 @@ export default function PalisadesCollectionPage() {
   });
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.palisades.breadcrumbs} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

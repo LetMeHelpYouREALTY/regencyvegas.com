@@ -53,10 +53,11 @@ export default function NearbyAmenitiesPage() {
           Nearby Amenities in {COMMUNITY.name}, Las Vegas
         </h1>
         <p className="mb-8 max-w-3xl text-base text-gray-200 md:text-lg">
-          {COMMUNITY.name} sits in The Cliffs village of Summerlin South ({COMMUNITY.zipCode}),
-          combining guard-gated 55+ living with quick access to shopping, healthcare, golf,
-          and Red Rock Canyon. Use the interactive map below to explore by category, or read
-          the hyperlocal guide for verified destinations and approximate drive times.
+          {COMMUNITY.name} sits in The Cliffs village of Summerlin South (
+          {COMMUNITY.zipCode}), combining guard-gated 55+ living with quick
+          access to shopping, healthcare, golf, and Red Rock Canyon. Use the
+          interactive map below to explore by category, or read the hyperlocal
+          guide for verified destinations and approximate drive times.
         </p>
 
         <section
@@ -70,9 +71,9 @@ export default function NearbyAmenitiesPage() {
             Interactive Amenity Map
           </h2>
           <p className="mb-6 text-base text-gray-200">
-            Filter restaurants, healthcare, grocery, parks, golf, and more around{" "}
-            {COMMUNITY.name}. The community marker shows the Regency Square area within
-            the guard-gated neighborhood.
+            Filter restaurants, healthcare, grocery, parks, golf, and more
+            around {COMMUNITY.name}. The community marker shows the Regency
+            Square area within the guard-gated neighborhood.
           </p>
           <AmenityMap />
         </section>
@@ -85,31 +86,29 @@ export default function NearbyAmenitiesPage() {
             Featured Nearby Places
           </h2>
           <ul className="grid gap-4 md:grid-cols-2">
-            {FEATURED_NEARBY_PLACES.filter((p) => p.schemaType !== "Residence").map(
-              (place) => {
-                const address = formatPlaceAddress(place);
-                return (
-                  <li
-                    key={place.name}
-                    className="rounded-xl border border-stone-700 bg-luxury-900/90 p-5"
+            {FEATURED_NEARBY_PLACES.map((place) => {
+              const address = formatPlaceAddress(place);
+              return (
+                <li
+                  key={place.name}
+                  className="rounded-xl border border-stone-700 bg-luxury-900/90 p-5"
+                >
+                  <h3 className="text-lg font-semibold text-amber-300">
+                    {place.name}
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-300">{address}</p>
+                  <p className="mt-2 text-base text-gray-200">{place.note}</p>
+                  <a
+                    href={buildDirectionsUrl(place.name, address)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-amber-400 hover:text-amber-300"
                   >
-                    <h3 className="text-lg font-semibold text-amber-300">
-                      {place.name}
-                    </h3>
-                    <p className="mt-1 text-sm text-gray-300">{address}</p>
-                    <p className="mt-2 text-base text-gray-200">{place.note}</p>
-                    <a
-                      href={buildDirectionsUrl(place.name, address)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-amber-400 hover:text-amber-300"
-                    >
-                      Get directions
-                    </a>
-                  </li>
-                );
-              }
-            )}
+                    Get directions
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </section>
 
@@ -146,7 +145,9 @@ export default function NearbyAmenitiesPage() {
                 <dt className="mb-2 text-lg font-semibold text-amber-300">
                   {faq.question}
                 </dt>
-                <dd className="text-base text-gray-200 md:text-lg">{faq.answer}</dd>
+                <dd className="text-base text-gray-200 md:text-lg">
+                  {faq.answer}
+                </dd>
               </div>
             ))}
           </dl>
@@ -167,8 +168,9 @@ export default function NearbyAmenitiesPage() {
           </h2>
           <p className="mx-auto mb-6 max-w-2xl text-base text-gray-100 md:text-lg">
             {AGENT.name} is a licensed Nevada REALTOR ({AGENT.license}) with{" "}
-            {AGENT.brokerage}, specializing in {COMMUNITY.name} and Las Vegas 55+
-            communities. Get hyperlocal guidance on amenities, resale values, and tours.
+            {AGENT.brokerage}, specializing in {COMMUNITY.name} and Las Vegas
+            55+ communities. Get hyperlocal guidance on amenities, resale values,
+            and tours.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <TrackedPhoneLink

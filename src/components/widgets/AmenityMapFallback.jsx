@@ -10,22 +10,26 @@ import {
 /**
  * Keyless map embed plus curated amenity list when Maps JS API is unavailable.
  */
-export default function AmenityMapFallback({ compact = false }) {
+export default function AmenityMapFallback({
+  compact = false,
+  places = null,
+}) {
   const embedUrl = buildEmbedFallbackUrl();
-  const listPlaces = FEATURED_NEARBY_PLACES.filter(
-    (p) => p.schemaType !== "Residence"
-  );
+  const height = compact ? 320 : 400;
+  const listPlaces =
+    places ??
+    FEATURED_NEARBY_PLACES.filter((p) => p.schemaType !== "Residence");
 
   return (
     <div className="space-y-6">
       <div
         className="w-full overflow-hidden rounded-lg border border-stone-700 bg-luxury-900"
-        style={{ minHeight: compact ? 280 : 400 }}
+        style={{ minHeight: height }}
       >
         <iframe
           src={embedUrl}
           width="100%"
-          height={compact ? 280 : 400}
+          height={height}
           style={{ border: 0, display: "block" }}
           allowFullScreen
           loading="lazy"
@@ -34,9 +38,8 @@ export default function AmenityMapFallback({ compact = false }) {
         />
       </div>
       <p className="text-sm text-gray-400">
-        Interactive category search appears when{" "}
-        <code className="text-amber-200/90">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code>{" "}
-        is configured. Showing verified nearby destinations below.
+        Showing a map overview and verified nearby destinations below. Category
+        search is available when the interactive map loads successfully.
       </p>
       <div>
         <h3 className="mb-3 text-lg font-semibold text-white">

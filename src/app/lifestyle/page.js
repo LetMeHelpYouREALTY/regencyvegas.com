@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { COMMUNITY, PHONE } from "@/lib/constants";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 import NearbyAmenityMapSection from "@/components/sections/NearbyAmenityMapSection";
@@ -8,6 +9,7 @@ export const metadata = generatePageMetadata(PAGE_SEO.lifestyle);
 export default function LifestylePage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.lifestyle.breadcrumbs} />
       <h1 className="mb-4 font-playfair text-3xl text-white md:text-4xl">
         Active Adult Lifestyle at Regency at Summerlin
       </h1>

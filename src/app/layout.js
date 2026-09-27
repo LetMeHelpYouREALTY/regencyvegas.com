@@ -5,7 +5,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { baseMetadata } from "@/lib/seo";
-import { agentSchema, businessSchema, reviewSchema } from "@/lib/schema";
+import { agentSchema, reviewSchema } from "@/lib/schema";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,10 +34,6 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(agentSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
         />
         {reviewSchema && (
           <script

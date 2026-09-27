@@ -1,4 +1,5 @@
 import { AGENT, COMMUNITY, PHONE } from "@/lib/constants";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 import { generateFAQSchema } from "@/lib/schema";
 import TrackedPhoneLink from "@/components/ui/TrackedPhoneLink";
@@ -78,6 +79,7 @@ export const metadata = generatePageMetadata(PAGE_SEO.faq);
 export default function FaqPage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.faq.breadcrumbs} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

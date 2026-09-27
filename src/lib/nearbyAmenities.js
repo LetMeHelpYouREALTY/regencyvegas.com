@@ -25,84 +25,72 @@ export const AMENITY_CATEGORIES = [
     label: "Healthcare",
     ariaLabel: "Show hospitals and medical offices near Regency at Summerlin",
     primaryTypes: ["hospital", "doctor"],
-    legacyType: "hospital",
   },
   {
     id: "golf",
     label: "Golf",
     ariaLabel: "Show golf courses near Regency at Summerlin",
     primaryTypes: ["golf_course"],
-    legacyType: "golf_course",
   },
   {
     id: "parks",
     label: "Parks",
     ariaLabel: "Show parks and outdoor recreation near Regency at Summerlin",
     primaryTypes: ["park"],
-    legacyType: "park",
   },
   {
     id: "community",
     label: "Recreation",
     ariaLabel: "Show community and recreation centers near Regency at Summerlin",
     primaryTypes: ["community_center"],
-    legacyType: "gym",
   },
   {
     id: "grocery",
     label: "Grocery",
     ariaLabel: "Show grocery stores near Regency at Summerlin",
     primaryTypes: ["grocery_store", "supermarket"],
-    legacyType: "grocery_or_supermarket",
   },
   {
     id: "restaurants",
     label: "Restaurants",
     ariaLabel: "Show restaurants near Regency at Summerlin",
     primaryTypes: ["restaurant"],
-    legacyType: "restaurant",
   },
   {
     id: "cafes",
     label: "Cafes",
     ariaLabel: "Show cafes near Regency at Summerlin",
     primaryTypes: ["cafe", "coffee_shop"],
-    legacyType: "cafe",
   },
   {
     id: "pharmacies",
     label: "Pharmacies",
     ariaLabel: "Show pharmacies near Regency at Summerlin",
     primaryTypes: ["pharmacy"],
-    legacyType: "pharmacy",
   },
   {
     id: "shopping",
     label: "Shopping",
     ariaLabel: "Show shopping near Regency at Summerlin",
     primaryTypes: ["shopping_mall"],
-    legacyType: "shopping_mall",
   },
   {
     id: "fitness",
     label: "Fitness",
     ariaLabel: "Show gyms and fitness centers near Regency at Summerlin",
     primaryTypes: ["gym"],
-    legacyType: "gym",
   },
   {
     id: "parking",
     label: "Parking",
     ariaLabel: "Show public parking near Regency at Summerlin",
     primaryTypes: ["parking"],
-    legacyType: "parking",
   },
   {
     id: "schools",
     label: "Schools",
     ariaLabel: "Show schools near Regency at Summerlin",
     primaryTypes: ["school"],
-    legacyType: "school",
     deemphasized: true,
   },
 ];
@@ -117,6 +105,7 @@ export const FEATURED_NEARBY_PLACES = [
     state: "NV",
     postalCode: "89135",
     category: "shopping",
+    sourceUrl: "https://www.downtownsummerlin.com/",
     note: "Open-air shopping, dining, and seasonal events in Summerlin.",
   },
   {
@@ -127,37 +116,41 @@ export const FEATURED_NEARBY_PLACES = [
     state: "NV",
     postalCode: "89135",
     category: "dining",
+    sourceUrl: "https://redrockresort.com/",
     note: "Dining, entertainment, and resort amenities at the base of Red Rock Canyon.",
   },
   {
     name: "Summerlin Hospital Medical Center",
     schemaType: "Hospital",
-    streetAddress: "657 Town Center Dr",
+    streetAddress: "657 N. Town Center Dr",
     city: "Las Vegas",
     state: "NV",
     postalCode: "89144",
     category: "healthcare",
+    sourceUrl: "https://www.summerlinhospital.com/about/contact-us",
     note: "Full-service hospital serving the Summerlin area.",
   },
   {
     name: "Whole Foods Market",
     schemaType: "GroceryStore",
-    streetAddress: "2010 Festival Plaza Dr",
+    streetAddress: "2475 S Town Center Dr",
     city: "Las Vegas",
     state: "NV",
     postalCode: "89135",
     category: "grocery",
+    sourceUrl: "https://www.wholefoodsmarket.com/stores/summerlin",
     note: "Grocery and prepared foods at Downtown Summerlin.",
   },
   {
     name: "TPC Las Vegas",
     schemaType: "GolfCourse",
-    streetAddress: "1700 Village Center Cir",
+    streetAddress: "9851 Canyon Run Dr",
     city: "Las Vegas",
     state: "NV",
-    postalCode: "89134",
+    postalCode: "89144",
     category: "golf",
-    note: "Public championship golf course in the Summerlin area.",
+    sourceUrl: "https://tpc.com/lasvegas/",
+    note: "Public PGA TOUR championship golf course in Summerlin.",
   },
   {
     name: "Red Rock Canyon National Conservation Area",
@@ -167,24 +160,16 @@ export const FEATURED_NEARBY_PLACES = [
     state: "NV",
     postalCode: "89161",
     category: "parks",
+    sourceUrl:
+      "https://www.blm.gov/visit/red-rock-canyon-national-conservation-area",
     note: "Scenic desert recreation and hiking west of Summerlin.",
-  },
-  {
-    name: COMMUNITY.name,
-    schemaType: "Residence",
-    streetAddress: "Regency Square Ave",
-    city: "Las Vegas",
-    state: "NV",
-    postalCode: COMMUNITY.zipCode,
-    category: "community",
-    note: "Guard-gated Toll Brothers 55+ community in The Cliffs village.",
   },
 ];
 
 export const NEARBY_AMENITY_FAQS = [
   {
     question: `What grocery stores are near ${COMMUNITY.name}?`,
-    answer: `Whole Foods Market at Downtown Summerlin (2010 Festival Plaza Dr) is one of the closest full-service grocers, with additional supermarkets along Charleston Blvd and throughout Summerlin South — typically within a short drive of ${COMMUNITY.name}.`,
+    answer: `Whole Foods Market at 2475 S Town Center Dr in Downtown Summerlin is one of the closest full-service grocers, with additional supermarkets along Charleston Blvd and throughout Summerlin South — typically within a short drive of ${COMMUNITY.name}.`,
   },
   {
     question: `How far is ${COMMUNITY.name} from the Las Vegas Strip?`,
@@ -226,7 +211,7 @@ export const NEARBY_CATEGORY_COPY = [
   {
     id: "golf",
     title: "Golf & Country Clubs",
-    body: `Summerlin is known for golf. TPC Las Vegas and other public and private courses are a short drive from ${COMMUNITY.name}. Inside the community, residents enjoy tennis, pickleball, bocce, and a full fitness center at the clubhouse.`,
+    body: `Summerlin is known for golf. TPC Las Vegas and other public and private courses are a short drive from ${COMMUNITY.name}. Inside the community, residents enjoy tennis, pickleball, bocce, and a fitness center at the clubhouse.`,
   },
   {
     id: "parks",
@@ -250,10 +235,25 @@ export const NEARBY_CATEGORY_COPY = [
   },
 ];
 
+const CATEGORY_TO_CURATED = {
+  healthcare: ["healthcare"],
+  golf: ["golf"],
+  parks: ["parks"],
+  community: [],
+  grocery: ["grocery"],
+  restaurants: ["dining"],
+  cafes: ["dining"],
+  pharmacies: ["healthcare"],
+  shopping: ["shopping"],
+  fitness: [],
+  parking: [],
+  schools: [],
+};
+
 export function getPlacesForCategory(categoryId) {
-  return FEATURED_NEARBY_PLACES.filter(
-    (p) => p.category === categoryId || (categoryId === "dining" && p.category === "dining")
-  );
+  const keys = CATEGORY_TO_CURATED[categoryId] ?? [];
+  if (keys.length === 0) return [];
+  return FEATURED_NEARBY_PLACES.filter((p) => keys.includes(p.category));
 }
 
 export function formatPlaceAddress(place) {
