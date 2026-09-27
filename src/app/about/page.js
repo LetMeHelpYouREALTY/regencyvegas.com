@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { AGENT, COMMUNITY, PHONE } from "@/lib/constants";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 import FiftyPlusCommunities from "@/components/SeoLinks/FiftyPlusCommunities";
@@ -8,6 +9,7 @@ export const metadata = generatePageMetadata(PAGE_SEO.about);
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.about.breadcrumbs} />
       <h1 className="mb-4 font-playfair text-3xl text-white md:text-4xl">
         About {AGENT.name}
       </h1>

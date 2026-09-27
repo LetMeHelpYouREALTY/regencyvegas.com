@@ -4,7 +4,15 @@ import { useEffect, useState } from "react";
 import { AGENT } from "@/lib/constants";
 
 export default function RealScoutSimpleSearch({ className = "" }) {
-  const [status, setStatus] = useState("loading");
+  const [status, setStatus] = useState(() => {
+    if (
+      typeof window !== "undefined" &&
+      window.customElements?.get("realscout-simple-search")
+    ) {
+      return "ready";
+    }
+    return "loading";
+  });
 
   useEffect(() => {
     if (status !== "loading") return;
@@ -15,11 +23,6 @@ export default function RealScoutSimpleSearch({ className = "" }) {
       }, 10000);
 
       return () => clearTimeout(fallbackTimeout);
-    }
-
-    if (window.customElements.get("realscout-simple-search")) {
-      setStatus("ready");
-      return;
     }
 
     const checkId = setInterval(() => {

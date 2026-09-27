@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { COMMUNITY, PHONE } from "@/lib/constants";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 
@@ -7,6 +8,7 @@ export const metadata = generatePageMetadata(PAGE_SEO.photos);
 export default function PhotosPage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.photos.breadcrumbs} />
       <h1 className="mb-4 font-playfair text-3xl text-white md:text-4xl">
         Regency at Summerlin Photo Gallery
       </h1>

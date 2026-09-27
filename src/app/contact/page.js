@@ -1,3 +1,4 @@
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { AGENT, BUSINESS, PHONE, COMMUNITY } from "@/lib/constants";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 import ContactForm from "@/components/forms/ContactForm";
@@ -11,6 +12,7 @@ export const metadata = generatePageMetadata(PAGE_SEO.contact);
 export default function ContactPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.contact.breadcrumbs} />
       <h1 className="mb-4 font-playfair text-3xl text-white md:text-4xl">
         Contact {AGENT.name}
       </h1>

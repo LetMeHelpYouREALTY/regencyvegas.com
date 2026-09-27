@@ -1,4 +1,5 @@
 import { COMMUNITY, PHONE } from "@/lib/constants";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
 
 export const metadata = generatePageMetadata(PAGE_SEO.recentlySold);
@@ -6,6 +7,7 @@ export const metadata = generatePageMetadata(PAGE_SEO.recentlySold);
 export default function RecentlySoldPage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 md:py-16 bg-luxury-black">
+      <BreadcrumbJsonLd items={PAGE_SEO.recentlySold.breadcrumbs} />
       <section className="mb-10">
         <h1 className="mb-4 font-playfair text-3xl text-white md:text-4xl">
           Recently Sold Homes in Regency at Summerlin
