@@ -1,78 +1,109 @@
 import { NextResponse } from 'next/server';
-import { AGENT, PHONE } from '@/lib/constants';
+import {
+  buildContactFubEvent,
+  postFollowUpBossEvent,
+} from '@/lib/followUpBoss';
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function countDigits(value) {
+  return (String(value || '').match(/\d/g) || []).length;
+}
+
+function validateContactBody(body) {
+  const name = typeof body.name === 'string' ? body.name.trim() : '';
+  const email = typeof body.email === 'string' ? body.email.trim() : '';
+  const phone = typeof body.phone === 'string' ? body.phone.trim() : '';
+  const message = typeof body.message === 'string' ? body.message.trim() : '';
+  const interest = body.interest;
+
+  if (!name) {
+    return { error: 'Name is required' };
+  }
+
+  const hasValidEmail = email && EMAIL_REGEX.test(email);
+  const hasValidPhone = countDigits(phone) >= 10;
+
+  if (!hasValidEmail && !hasValidPhone) {
+    return { error: 'A valid email or phone number is required' };
+  }
+
+  if (email && !hasValidEmail) {
+    return { error: 'Invalid email address' };
+  }
+
+  if (phone && !hasValidPhone) {
+    return { error: 'Invalid phone number' };
+  }
+
+  if (!message) {
+    return { error: 'Message is required' };
+  }
+
+  if (!interest) {
+    return { error: 'Interest is required' };
+  }
+
+  return {
+    data: { name, email, phone, message, interest },
+  };
+}
 
 /**
  * API Route Handler for Contact Form Submissions
  * POST /api/contact
  */
 export async function POST(request) {
+  let body;
+
   try {
-    const body = await request.json();
-    const { name, email, phone, interest, message } = body;
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
+  }
 
-    // Basic validation
-    if (!name || !email || !phone || !interest || !message) {
-      return NextResponse.json(
-        { error: 'Missing required fields' },
-        { status: 400 }
-      );
-    }
+  const validation = validateContactBody(body ?? {});
+  if (validation.error) {
+    return NextResponse.json({ error: validation.error }, { status: 400 });
+  }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return NextResponse.json(
-        { error: 'Invalid email address' },
-        { status: 400 }
-      );
-    }
+  const referer = request.headers.get('referer') || '';
+  const sourceUrl =
+    (typeof body.sourceUrl === 'string' && body.sourceUrl.trim()) || referer || undefined;
 
-    // In a production environment, you would:
-    // 1. Send email via SendGrid, Resend, or similar service
-    // 2. Save to CRM (Follow Up Boss, Salesforce, etc.)
-    // 3. Send notification to agent
-    // 4. Log for analytics
+  const eventPayload = buildContactFubEvent({
+    ...validation.data,
+    sourceUrl,
+    formName: 'Contact Form',
+  });
 
-    // For now, we'll just log and return success
-    // TODO: Integrate with email service and CRM
-    console.log('Contact form submission:', {
-      name,
-      email,
-      phone,
-      interest,
-      message,
-      timestamp: new Date().toISOString(),
-    });
+  const apiKey = process.env.FOLLOW_UP_BOSS_API_KEY;
+  const fubResult = await postFollowUpBossEvent(eventPayload, { apiKey });
 
-    // Simulate email sending (replace with actual email service)
-    // Example with SendGrid:
-    // await sendEmail({
-    //   to: AGENT.email,
-    //   subject: `New Contact Form Submission from ${name}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${name}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>Phone:</strong> ${phone}</p>
-    //     <p><strong>Interest:</strong> ${interest}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${message}</p>
-    //   `,
-    // });
-
-    return NextResponse.json(
-      {
-        success: true,
-        message: 'Your message has been received. We will contact you soon.',
-      },
-      { status: 200 }
+  if (fubResult.missingKey) {
+    console.error(
+      'FOLLOW_UP_BOSS_API_KEY is not configured; contact form cannot send to Follow Up Boss.'
     );
-  } catch (error) {
-    console.error('Contact form API error:', error);
     return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
+      { error: 'Lead routing is temporarily unavailable' },
+      { status: 503 }
     );
   }
-}
 
+  if (!fubResult.ok) {
+    const statusLabel = fubResult.status || 'network error';
+    console.error(`Follow Up Boss event failed with status: ${statusLabel}`);
+    return NextResponse.json(
+      { error: 'Failed to deliver message to CRM' },
+      { status: 502 }
+    );
+  }
+
+  return NextResponse.json(
+    {
+      success: true,
+      message: 'Your message has been received. We will contact you soon.',
+    },
+    { status: 200 }
+  );
+}
