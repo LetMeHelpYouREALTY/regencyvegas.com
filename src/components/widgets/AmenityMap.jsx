@@ -62,7 +62,10 @@ async function fetchPlacesForCategory(maps, category, center) {
         maxResultCount: 12,
       });
       return (places || []).map((place) => ({
-        name: place.displayName,
+        name:
+          typeof place.displayName === "string"
+            ? place.displayName
+            : place.displayName?.text || "Place",
         address: place.formattedAddress,
         rating: place.rating,
         lat: place.location?.lat(),
