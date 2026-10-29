@@ -93,13 +93,6 @@ export const agentSchema = {
     "https://askdrjanduffy.com",
   ],
   ...(BUSINESS.reviews.count > 0 && {
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: BUSINESS.reviews.rating.toString(),
-      reviewCount: BUSINESS.reviews.count.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    },
   }),
 };
 
