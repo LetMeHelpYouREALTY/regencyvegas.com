@@ -53,7 +53,7 @@ const generalFaqs = [
   },
   {
     question: "Is Regency safe?",
-    answer: `Regency has both a staffed guard gate AND an electronic resident-only gate — double security. The 55+ age restriction means a quieter, established community. You'll know your neighbors. Many residents mention the "peace of mind" factor as a top reason they chose Regency. It's one of the most secure 55+ communities in Vegas. Ready to see it in person? Call or text ${PHONE.marketing}.`,
+    answer: `Regency has both a staffed guard gate AND an electronic resident-only gate — double security. The 55+ age restriction means a quieter, community. You'll know your neighbors. Many residents mention the "peace of mind" factor as a top reason they chose Regency. It's one of the most secure 55+ communities in Vegas. Ready to see it in person? Call or text ${PHONE.marketing}.`,
   },
   {
     question: "How far is Regency from the Strip/airport/hospitals?",
