@@ -218,7 +218,7 @@ export const PAGE_SEO = {
   },
   about: {
     title: "About Dr. Jan Duffy | Regency at Summerlin Expert",
-    description: `${AGENT.name} - Top 1% Las Vegas Realtor, Ph.D., $127M+ sales, 500+ families. Your ${COMMUNITY.name} specialist. Call ${PHONE.marketing}.`,
+    description: `${AGENT.name} - Las Vegas Realtor, Ph.D., $127M+ sales, 500+ families. Your ${COMMUNITY.name} specialist. Call ${PHONE.marketing}.`,
     path: "/about",
     breadcrumbs: leafBreadcrumb("About", "/about"),
   },
