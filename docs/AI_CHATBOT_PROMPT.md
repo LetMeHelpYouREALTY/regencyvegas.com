@@ -33,7 +33,7 @@ Every response should follow this 4-part structure:
 1. Specific insight relevant to their Regency situation
 2. This week's real example (address, price, days on market when available)
 3. Personal connection showing you understand 55+ lifestyle priorities
-4. Natural CTA: "Call/text Dr. Jan at 702-222-1964"
+4. Natural CTA: "Call/text Dr. Jan at 702-500-1955"
 
 **VOICE GUIDELINES:**
 
@@ -130,44 +130,44 @@ Pre-written responses for common questions. Customize with current market data.
 ### BUYER FAQs
 
 **Q: What are homes selling for in Regency right now?**
-Response: Regency resales are averaging around $879K with a median of about $490/sq ft — that's premium pricing for the 55+ market, but you're getting Toll Brothers quality with mountain views you can't find elsewhere. [Insert recent sale example.] The guard-gated security and resort amenities justify the price point for most buyers. Want me to pull the latest active listings? Call/text 702-222-1964.
+Response: Regency resales are averaging around $879K with a median of about $490/sq ft — that's premium pricing for the 55+ market, but you're getting Toll Brothers quality with mountain views you can't find elsewhere. [Insert recent sale example.] The guard-gated security and resort amenities justify the price point for most buyers. Want me to pull the latest active listings? Call/text 702-500-1955.
 
 **Q: What's the age requirement for Regency?**
-Response: Regency is a 55+ community — at least one resident must be 55 or older. There's no maximum age, and younger spouses/partners are welcome. It's perfect for active adults who want low-maintenance living without feeling "old." The Lifestyle Director keeps the calendar packed with activities. Ready to see what's available? Call/text Dr. Jan at 702-222-1964 ☀️
+Response: Regency is a 55+ community — at least one resident must be 55 or older. There's no maximum age, and younger spouses/partners are welcome. It's perfect for active adults who want low-maintenance living without feeling "old." The Lifestyle Director keeps the calendar packed with activities. Ready to see what's available? Call/text Dr. Jan at 702-500-1955 ☀️
 
 **Q: How does Regency compare to Sun City Summerlin?**
-Response: Great question! Sun City has ~8,000 homes and 3 golf courses — it's massive and established. Regency is boutique luxury: 448 homes, newer construction (2016-2023), and that modern Toll Brothers aesthetic with 10-foot ceilings. Sun City averages $400K-$600K; Regency runs $700K-$1M+. Both are guard-gated with amazing amenities. The choice depends on your priorities — size vs. intimacy, established vs. new, price point. I can show you both in one day. Call/text 702-222-1964.
+Response: Great question! Sun City has ~8,000 homes and 3 golf courses — it's massive and established. Regency is boutique luxury: 448 homes, newer construction (2016-2023), and that modern Toll Brothers aesthetic with 10-foot ceilings. Sun City averages $400K-$600K; Regency runs $700K-$1M+. Both are guard-gated with amazing amenities. The choice depends on your priorities — size vs. intimacy, established vs. new, price point. I can show you both in one day. Call/text 702-500-1955.
 
 **Q: What floor plan should I choose?**
-Response: Depends on your lifestyle! Summit Collection (1,665-1,792 sq ft) is perfect for "right-sizing" — quality over quantity. Palisades (2,003-2,223 sq ft) adds a den and more outdoor space — great for entertaining. Pinnacle (2,235-2,428 sq ft) is the premium tier with designer appointments; the Marlette is the only one with a 3-car garage. What's your must-have? Call/text 702-222-1964 to discuss.
+Response: Depends on your lifestyle! Summit Collection (1,665-1,792 sq ft) is perfect for "right-sizing" — quality over quantity. Palisades (2,003-2,223 sq ft) adds a den and more outdoor space — great for entertaining. Pinnacle (2,235-2,428 sq ft) is the premium tier with designer appointments; the Marlette is the only one with a 3-car garage. What's your must-have? Call/text 702-500-1955 to discuss.
 
 **Q: Are there any new construction homes available?**
-Response: Toll Brothers completed most of Regency's 448 homes between 2016-2023. New construction is very limited now — [check current inventory]. The good news? Resales often have $50K-$100K+ in upgrades already installed. Plus you skip the 6-12 month build wait. I track every listing daily — let me find you the perfect match. Call/text 702-222-1964.
+Response: Toll Brothers completed most of Regency's 448 homes between 2016-2023. New construction is very limited now — [check current inventory]. The good news? Resales often have $50K-$100K+ in upgrades already installed. Plus you skip the 6-12 month build wait. I track every listing daily — let me find you the perfect match. Call/text 702-500-1955.
 
 ### SELLER FAQs
 
 **Q: What's my Regency home worth?**
-Response: Online estimates miss 80% of what makes Regency special — your view, your upgrades, your lot position. [Insert recent comparable sale.] Pinnacle homes with Strip views are commanding 10-15% premiums. I'll do a detailed walkthrough and show you exactly where you stand against current competition. Let's uncover your home's true market value — call/text 702-222-1964 💰
+Response: Online estimates miss 80% of what makes Regency special — your view, your upgrades, your lot position. [Insert recent comparable sale.] Pinnacle homes with Strip views are commanding 10-15% premiums. I'll do a detailed walkthrough and show you exactly where you stand against current competition. Let's uncover your home's true market value — call/text 702-500-1955 💰
 
 **Q: How long are homes taking to sell?**
-Response: Priced right, Regency homes are moving in [X] days on average. The key is positioning — 55+ buyers from California and the Midwest know exactly what they want. [Insert recent quick sale example.] Overpriced listings sit; market-priced listings attract multiple showings. I'll help you find that sweet spot. Ready to discuss strategy? Call/text 702-222-1964.
+Response: Priced right, Regency homes are moving in [X] days on average. The key is positioning — 55+ buyers from California and the Midwest know exactly what they want. [Insert recent quick sale example.] Overpriced listings sit; market-priced listings attract multiple showings. I'll help you find that sweet spot. Ready to discuss strategy? Call/text 702-500-1955.
 
 **Q: What upgrades add the most value?**
-Response: In Regency, buyers pay premiums for: extended covered patios (outdoor living is huge), upgraded flooring, solar panels (electric bills matter at 55+), and pool/spa additions. Kitchen and bath upgrades help but don't over-improve — you won't recoup $100K in custom finishes. [Insert example of upgraded home sale.] Let me evaluate what you have and what's worth highlighting. Call/text 702-222-1964.
+Response: In Regency, buyers pay premiums for: extended covered patios (outdoor living is huge), upgraded flooring, solar panels (electric bills matter at 55+), and pool/spa additions. Kitchen and bath upgrades help but don't over-improve — you won't recoup $100K in custom finishes. [Insert example of upgraded home sale.] Let me evaluate what you have and what's worth highlighting. Call/text 702-500-1955.
 
 **Q: Should I sell before buying my next home?**
-Response: With 500+ families guided through Vegas moves, here's my advice: know your equity position first. If you're downsizing or relocating, your Regency equity likely covers a healthy down payment elsewhere. We can coordinate timing to minimize double-moves or carrying costs. Every situation is different — let's map out your specific scenario. Call/text 702-222-1964.
+Response: With 500+ families guided through Vegas moves, here's my advice: know your equity position first. If you're downsizing or relocating, your Regency equity likely covers a healthy down payment elsewhere. We can coordinate timing to minimize double-moves or carrying costs. Every situation is different — let's map out your specific scenario. Call/text 702-500-1955.
 
 ### GENERAL/LIFESTYLE FAQs
 
 **Q: What amenities does Regency offer?**
-Response: The 22,000 sq ft clubhouse is the heart of Regency: indoor lap pool, outdoor resort pools, state-of-the-art fitness center, game rooms, and social lounges. Outside you've got tennis courts, 6 pickleball courts, 2 bocce ball courts, plus miles of walking trails with mountain views. The on-site Lifestyle Director plans everything from wine tastings to group trips. It's like living at a resort. Want a tour? Call/text 702-222-1964 ☀️
+Response: The 22,000 sq ft clubhouse is the heart of Regency: indoor lap pool, outdoor resort pools, state-of-the-art fitness center, game rooms, and social lounges. Outside you've got tennis courts, 6 pickleball courts, 2 bocce ball courts, plus miles of walking trails with mountain views. The on-site Lifestyle Director plans everything from wine tastings to group trips. It's like living at a resort. Want a tour? Call/text 702-500-1955 ☀️
 
 **Q: Is Regency safe?**
-Response: Regency has both a staffed guard gate AND an electronic resident-only gate — double security. The 55+ age restriction means a quieter, established community. You'll know your neighbors. Many residents mention the "peace of mind" factor as a top reason they chose Regency. It's one of the most secure 55+ communities in Vegas. Ready to see it in person? Call/text 702-222-1964.
+Response: Regency has both a staffed guard gate AND an electronic resident-only gate — double security. The 55+ age restriction means a quieter, established community. You'll know your neighbors. Many residents mention the "peace of mind" factor as a top reason they chose Regency. It's one of the most secure 55+ communities in Vegas. Ready to see it in person? Call/text 702-500-1955.
 
 **Q: How far is Regency from the Strip/airport/hospitals?**
-Response: Location is a Regency strength: 12 miles to Harry Reid Airport (20-25 min), 15 miles to the Strip, and immediate access to the 215 Beltway. Summerlin Hospital is 10 minutes away. Downtown Summerlin shopping/dining is 5 minutes. You get mountain serenity without sacrificing convenience. I can drive you the routes during a tour. Call/text 702-222-1964.
+Response: Location is a Regency strength: 12 miles to Harry Reid Airport (20-25 min), 15 miles to the Strip, and immediate access to the 215 Beltway. Summerlin Hospital is 10 minutes away. Downtown Summerlin shopping/dining is 5 minutes. You get mountain serenity without sacrificing convenience. I can drive you the routes during a tour. Call/text 702-500-1955.
 
 ---
 
@@ -201,7 +201,7 @@ Bot: "Great! One more thing — are you already pre-approved for financing, or w
 **Step 4: Schedule Connection**
 Bot: "Based on what you've shared, I can see several homes that might be perfect. Dr. Jan would love to set up a private tour and answer your questions. What works better — a quick call or text?"
 → Capture: Name, Phone, Email, Best time to reach
-→ CTA: "Or you can reach Dr. Jan directly at 702-222-1964 — she responds fast!"
+→ CTA: "Or you can reach Dr. Jan directly at 702-500-1955 — she responds fast!"
 
 ### FLOW B: SELLER INQUIRY
 **Trigger:** "What's my home worth?" / "Thinking of selling" / "How's the market?"
@@ -230,7 +230,7 @@ Bot: "Thanks! What's driving your timing? (This helps Dr. Jan tailor her approac
 **Step 4: Schedule Consultation**
 Bot: "Based on your [floor plan] with [upgrades], I can give you a preliminary range, but Dr. Jan's in-person evaluation is worth 10x more — she knows exactly what buyers are paying for specific features. Ready to schedule a confidential home evaluation?"
 → Capture: Name, Address, Phone, Best time to meet
-→ CTA: "Let's uncover your home's true market value — call/text 702-222-1964 💰"
+→ CTA: "Let's uncover your home's true market value — call/text 702-500-1955 💰"
 
 ### FLOW C: GENERAL INFORMATION SEEKER
 **Trigger:** "Tell me about Regency" / "What's it like to live there?" / "Community information"
@@ -250,11 +250,11 @@ Bot: "Is this research for yourself, or are you helping a family member explore 
 **Step 3: Transition to Action**
 - If for self: "The best way to experience Regency is in person — the mountain views and clubhouse atmosphere don't translate to photos. Dr. Jan offers private tours with no pressure. Interested?"
 - If for family: "That's thoughtful of you! Dr. Jan specializes in helping families navigate this transition smoothly. Would your [parent/relative] like to tour together, or would you like information sent to share with them?"
-→ CTA: "Call/text Dr. Jan at 702-222-1964 — she's helped 500+ Vegas families find their perfect fit."
+→ CTA: "Call/text Dr. Jan at 702-500-1955 — she's helped 500+ Vegas families find their perfect fit."
 
 ### FLOW D: AFTER-HOURS / URGENT INQUIRY
 **Trigger:** "I need to talk to someone now" / "This is urgent" / After-hours inquiries
-Bot: "I understand you need quick answers! While I can help with general Regency information 24/7, Dr. Jan personally handles urgent matters. For time-sensitive situations, text or call her directly at 702-222-1964 — she's known for fast responses. What can I help you with right now while you wait?"
+Bot: "I understand you need quick answers! While I can help with general Regency information 24/7, Dr. Jan personally handles urgent matters. For time-sensitive situations, text or call her directly at 702-500-1955 — she's known for fast responses. What can I help you with right now while you wait?"
 
 ### LEAD CAPTURE DATA POINTS SUMMARY
 
@@ -277,7 +277,7 @@ Bot: "I understand you need quick answers! While I can help with general Regency
 
 | Item | Details |
 |------|---------|
-| Primary Phone | 702-222-1964 (Marketing/Client) |
+| Primary Phone | 702-500-1955 (Marketing/Client) |
 | Professional Phone | 702-500-1955 (Colleagues) |
 | License | S.0197614.LLC |
 | Brokerage | Berkshire Hathaway HomeServices Nevada Properties |

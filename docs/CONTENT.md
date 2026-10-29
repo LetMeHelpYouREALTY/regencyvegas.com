@@ -56,7 +56,7 @@
 
 ## Contact Information
 - Agent: Dr. Jan Duffy
-- Marketing Phone: 702-222-1964
+- Marketing Phone: 702-500-1955
 - Professional Phone: 702-500-1955
 - License: #S.0197614.LLC
 - Brokerage: Berkshire Hathaway HomeServices Nevada Properties
