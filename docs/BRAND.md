@@ -12,8 +12,8 @@
 
 ## Credentials to Highlight
 - Ph.D. in Market Research & Consumer Behavior
-- Top 1% Las Vegas agent
-- $127M+ in sales
+- Licensed since 2008 · 35 years in Las Vegas
+- $127M+ in Dr. Duffy Group career sales
 - 500+ families served
 - 30+ years experience
 
