@@ -6,7 +6,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { baseMetadata } from "@/lib/seo";
 import { agentSchema, reviewSchema } from "@/lib/schema";
-import WidgetTracker from './widget-tracker'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -60,7 +59,6 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <WidgetTracker />
       </body>
     </html>
   );
