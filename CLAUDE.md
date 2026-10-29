@@ -13,6 +13,6 @@ Hyperlocal real estate site for Dr. Jan Duffy, Berkshire Hathaway HomeServices N
 
 ## Rules
 - **Fair Housing first.** No protected-class wording or proxies ("safe neighborhood," "good schools," "family-friendly"). Describe square footage, amenities, school names, and commute times instead.
-- **This site has no number of its own yet.** It currently shows 702-222-1964 and 702-500-1955. Ask Dr. Jan for the site's number before adding or changing any phone number. 702-222-1964 is for client email and text only.
+- **This site's phone number is 702-500-1955** (`PHONE` in `src/lib/constants.js`). Never put 702-222-1964 on the site; that number is for client email and text only.
 - **No secrets in git.** `.env*` stays gitignored. A new env var goes in Vercel (Production + Preview), and the PR names it.
 - Work on a branch and open a PR. `main` deploys to production.
