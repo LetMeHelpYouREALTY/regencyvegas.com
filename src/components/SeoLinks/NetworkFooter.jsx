@@ -12,8 +12,6 @@ export default function NetworkFooter() {
           <p className="text-xl font-playfair font-bold text-white mb-2">
             Dr. Jan Duffy | Las Vegas Real Estate Expert
           </p>
-          <p className="text-gray-300">{AGENT.brokerage}</p>
-          <p className="text-sm text-gray-400">License: {AGENT.license}</p>
           <div className="mt-3">
             <TrackedPhoneLink
               phone={PHONE.marketing}
@@ -478,6 +476,7 @@ export default function NetworkFooter() {
       {/* Bottom Bar */}
       <div className="border-t border-stone-700 bg-luxury-900 py-4 text-center text-sm text-gray-300">
         <p>© {new Date().getFullYear()} RegencyVegas.com · All Rights Reserved</p>
+        <p className="mt-1">Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC</p>
         <p className="mt-2 text-xs text-gray-400">
           &quot;Let Me Help You!&quot; — Empower, Protect, Stress-Free Home Buying & Selling
         </p>
