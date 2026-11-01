@@ -29,7 +29,9 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // Add legacy route redirects here if needed
+      // Legacy listing routes from the pre-2026 Vite site -> current homes-for-sale page
+      { source: "/allproperties", destination: "/homes-for-sale", permanent: true },
+      { source: "/properties", destination: "/homes-for-sale", permanent: true },
     ];
   },
   async headers() {
