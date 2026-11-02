@@ -101,6 +101,18 @@ export default function BuyingGuidePage() {
         {COMMUNITY.name}, call or text{" "}
         <span className="font-semibold">{PHONE.marketing}</span> today.
       </p>
+      <p className="mt-4 text-base text-gray-200 md:text-lg">
+        Prefer to pick a time?{" "}
+        <a
+          href="https://calendly.com/drjanduffy/showing?utm_source=regencyvegas.com&utm_medium=website&utm_content=buying-guide"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-amber-400 hover:text-amber-500 underline-offset-2 hover:underline"
+        >
+          Book a private showing with Dr. Jan Duffy
+        </a>
+        .
+      </p>
 
       {/* Contextual Links Section */}
       <section className="mt-12 p-6 bg-luxury-900 rounded-lg border border-stone-700">

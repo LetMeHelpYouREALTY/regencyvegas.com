@@ -30,7 +30,7 @@ export default function SellingPage() {
         <li>Staging recommendations and showing strategy</li>
       </ul>
       <h3 className="mb-2 text-lg font-semibold text-white">
-        Request a Free Home Valuation
+        What&apos;s My Regency at Summerlin Home Worth?
       </h3>
       <p className="text-base text-gray-200 md:text-lg">
         To receive a personalized valuation and strategy session for your{" "}
@@ -38,6 +38,17 @@ export default function SellingPage() {
         <span className="font-semibold">{PHONE.marketing}</span>. We&apos;ll
         discuss timing, preparation, and what today&apos;s buyers are looking for in
         this community.
+      </p>
+      <p className="mt-4 text-base text-gray-200 md:text-lg">
+        <a
+          href="https://calendly.com/drjanduffy/listing-consultation?utm_source=regencyvegas.com&utm_medium=website&utm_content=selling-valuation"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-amber-400 hover:text-amber-500 underline-offset-2 hover:underline"
+        >
+          Book a listing consultation with Dr. Jan Duffy
+        </a>
+        .
       </p>
 
       {/* Contextual Links Section */}
