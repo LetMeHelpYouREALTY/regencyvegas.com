@@ -15,7 +15,7 @@ export default function Header() {
             by Dr. Jan Duffy, Las Vegas Real Estate Expert
           </span>
         </Link>
-        <div className="flex items-center gap-3 md:gap-6 shrink-0">
+        <div className="flex items-center gap-3 md:gap-6 min-w-0">
           <a
             href="https://calendly.com/drjanduffy/showing?utm_source=regencyvegas.com&utm_medium=website&utm_content=header"
             target="_blank"

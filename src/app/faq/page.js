@@ -15,7 +15,7 @@ const buyerFaqs = [
   },
   {
     question: "How does Regency compare to Sun City Summerlin?",
-    answer: `Great question! Sun City has ~8,000 homes and 3 golf courses — it's massive and established. Regency is boutique luxury: ${COMMUNITY.totalHomes} homes, newer construction (${COMMUNITY.yearBuilt}), and that modern Toll Brothers aesthetic with 10-foot ceilings. Sun City averages $400K-$600K; Regency runs $${(COMMUNITY.price.min / 1000).toFixed(0)}K-$${(COMMUNITY.price.max / 1000000).toFixed(1)}M+. Both are guard-gated with amazing amenities. The choice depends on your priorities — size vs. intimacy, established vs. new, price point. We can show you both in one day. Call or text ${PHONE.marketing}.`,
+    answer: `Sun City Summerlin is a large, established guard-gated community with multiple golf courses and a wide mix of home styles. Regency at Summerlin is a smaller Toll Brothers enclave with modern floor plans, tall ceilings, and resort-style amenities. Both use guard gates; the better fit depends on whether you want a larger master-planned scale or a more intimate boutique setting. We can show you both in one day. Call or text ${PHONE.marketing}.`,
   },
   {
     question: "What floor plan should I choose?",
@@ -23,7 +23,7 @@ const buyerFaqs = [
   },
   {
     question: "Are there any new construction homes available?",
-    answer: `Toll Brothers completed most of Regency's ${COMMUNITY.totalHomes} homes between ${COMMUNITY.yearBuilt}. New construction is very limited now. The good news? Resales often have $50K-$100K+ in upgrades already installed. Plus you skip the 6-12 month build wait. We track every listing daily — let us find you the perfect match. Call or text ${PHONE.marketing}.`,
+    answer: `Regency at Summerlin is a resale community — Toll Brothers built the homes in phases, with construction largely complete around ${COMMUNITY.yearBuilt}. Buyers typically shop existing resale listings rather than new-build inventory from the developer. Resales may include owner-installed upgrades, and you avoid a long build timeline. We track listings daily — let us find you the right match. Call or text ${PHONE.marketing}.`,
   },
 ];
 
@@ -52,8 +52,8 @@ const generalFaqs = [
     answer: `The 22,000 sq ft clubhouse is the heart of Regency: indoor lap pool, outdoor resort pools, state-of-the-art fitness center, game rooms, and social lounges. Outside you've got tennis courts, 6 pickleball courts, 2 bocce ball courts, plus miles of walking trails with mountain views. The on-site Lifestyle Director plans everything from wine tastings to group trips. It's like living at a resort. Want a tour? Call or text ${PHONE.marketing}.`,
   },
   {
-    question: "Is Regency safe?",
-    answer: `Regency has both a staffed guard gate AND an electronic resident-only gate — double security. The 55+ age restriction means a quieter, community. You'll know your neighbors. Many residents mention the "peace of mind" factor as a top reason they chose Regency. It's one of the most secure 55+ communities in Vegas. Ready to see it in person? Call or text ${PHONE.marketing}.`,
+    question: "Is Regency at Summerlin guard-gated?",
+    answer: `Yes. Regency at Summerlin has a staffed guard gate at the community entrance and an electronic gate for resident access. Want to see how entry works during a visit? Call or text ${PHONE.marketing}.`,
   },
   {
     question: "How far is Regency from the Strip/airport/hospitals?",
