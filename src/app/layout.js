@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://em.realscout.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://d1buiexcd5gara.cloudfront.net" />
+        <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(agentSchema) }}
