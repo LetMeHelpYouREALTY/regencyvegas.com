@@ -2,6 +2,7 @@ import Link from "next/link";
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { COMMUNITY, PHONE } from "@/lib/constants";
 import { PAGE_SEO, generatePageMetadata } from "@/lib/seo";
+import NearbyAmenityMapSection from "@/components/sections/NearbyAmenityMapSection";
 
 export const metadata = generatePageMetadata(PAGE_SEO.lifestyle);
 
@@ -49,11 +50,18 @@ export default function LifestylePage() {
         </Link>{" "}
         that support this active 55+ lifestyle.
       </p>
-      <p className="text-base text-gray-200 md:text-lg">
+      <p className="mb-8 text-base text-gray-200 md:text-lg">
         To learn more about current lifestyle programming or to talk about whether this
         community fits your goals, call or text{" "}
         <span className="font-semibold">{PHONE.marketing}</span>.
       </p>
+
+      <NearbyAmenityMapSection
+        className="bg-luxury-black"
+        compact
+        title="Explore the Neighborhood"
+        description={`Beyond the clubhouse, ${COMMUNITY.name} residents enjoy Summerlin shopping, dining, golf, and Red Rock recreation minutes from home.`}
+      />
     </main>
   );
 }
